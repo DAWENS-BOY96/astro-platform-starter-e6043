@@ -12,10 +12,36 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
 ---
 
 <Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+  <ContextAlert class="mb-8" />
+
+  <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+
+  <Markdown content={explainer} class="mb-10 text-lg" />
+
+  <p>
+    <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+  </p>
+
+  <!-- ✅ FORM DEPLOY BOT IZUKA-MD -->
+  <div class="mt-12">
+    <h2 class="text-xl font-bold mb-4 text-purple-600">🚀 Deploy Your Bot: IZUKA-MD</h2>
+    <form method="POST" action="/deploy" class="space-y-4">
+      <label for="session" class="block text-sm font-semibold text-gray-700">Paste your WhatsApp Session ID:</label>
+      <textarea
+        id="session"
+        name="session"
+        rows="10"
+        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        placeholder="Paste your session ID JSON here..."
+        required
+      ></textarea>
+
+      <button
+        type="submit"
+        class="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition"
+      >
+        ✅ Deploy IZUKA-MD Bot
+      </button>
+    </form>
+  </div>
 </Layout>
